@@ -5,7 +5,7 @@
 #include <sstream>
 #include "performance_tests/SuperAwesome.h"
 
-int rateParam;
+double rateParam;
 
 void rate_callback(performance_tests::looprateConfig &config, uint32_t level)
 {
@@ -40,8 +40,6 @@ int main(int argc, char **argv)
 
     if(enableBit)
    	 loop_rate = ros::Rate(rateParam);
-    else
-   	 loop_rate = ros::Rate(rate);
 
     performance_tests::SuperAwesome msg;
 

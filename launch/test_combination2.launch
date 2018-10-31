@@ -4,7 +4,7 @@
 	<!-- Run publisher -->
 	<node pkg="performance_tests" type="cpp_publisher" name="cpp_publisher">
 		<param name="loop_frequency" type="double" value="1000.0"/>
-		<param name="dynamic_param" type="bool" value="false"/>
+		<param name="dynamic_param" type="bool" value="true"/>
 	</node>
 	<!-- Run subscriber -->
 	<node pkg="performance_tests" type="cpp_subscriber" name="cpp_subscriber"/>
