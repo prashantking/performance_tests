@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<launch>
+	<node pkg="performance_tests" type="py_publisher.py" name="py_publisher">
+		<param name="loop_frequency" type="double" value="850.0"/>
+	</node>
+
+	<!-- Run subscriber -->
+	<node pkg="performance_tests" type="cpp_subscriber" name="cpp_subscriber"/>
+</launch>

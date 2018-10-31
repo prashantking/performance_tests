@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Combination 3: C++ publisher to Python subscriber -->
+<launch>
+	<!-- Run publisher -->
+	<node pkg="performance_tests" type="cpp_publisher" name="cpp_publisher">
+		<param name="loop_frequency" type="double" value="20.0"/>
+		<param name="dynamic_param" type="bool" value="false"/>
+	</node>
+	<!-- Run subscriber -->
+	<node pkg="performance_tests" type="py_subscriber.py" name="py_subscriber"/>
+</launch>
