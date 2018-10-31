@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Combination 2: C++ publisher to C++ subscriber -->
+<!-- test Combination 2: C++ publisher to C++ subscriber -->
 <launch>
-	<!-- Run publisher -->
+	<!-- publisher -->
 	<node pkg="performance_tests" type="cpp_publisher" name="cpp_publisher">
-		<param name="loop_frequency" type="double" value="1000.0"/>
-		<param name="dynamic_param" type="bool" value="true"/>
+		<param name="loop_frequency" type="double" value="20.0"/>
+		<param name="dynamic_param" type="bool" value="false"/>
 	</node>
-	<!-- Run subscriber -->
+	<!-- subscriber -->
 	<node pkg="performance_tests" type="cpp_subscriber" name="cpp_subscriber"/>
 </launch>

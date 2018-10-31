@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!-- test combination 3: Python publisher to Python subscriber -->
 <launch>
-	<!-- Run publisher -->
+	<!-- publisher -->
 	<node pkg="performance_tests" type="py_publisher.py" name="py_publisher">
-		<param name="loop_frequency" type="double" value="2000.0"/>
+		<param name="loop_frequency" type="double" value="20.0"/>
 	</node>
 
-	<!-- Run subscriber -->
+	<!-- subscriber -->
 	<node pkg="performance_tests" type="py_subscriber.py" name="py_subscriber"/>
 </launch>
